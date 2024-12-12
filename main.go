@@ -11,4 +11,6 @@ func main() {
 	app.get("/hello", func(c *fiber.Ctx)error{
 		return c.SendString("hello gofiber again ")
 	})
+
+	app.Listen(":8080")
 }
